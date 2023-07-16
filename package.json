@@ -1,0 +1,16 @@
+{
+  "name": "gulp-connectiong-room",
+  "version": "0.1.0",
+  "description": "To write constants that are shared by JavaScript and SCSS in gulpfile.js.",
+  "main": "index.js",
+  "dependencies": {
+    "plugin-error": "^2.0.1",
+    "through2": "^4.0.2",
+    "vinyl": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "itozyun <itozyun@gmail.com>",
+  "license": "Apache-2.0"
+}
