@@ -1,6 +1,6 @@
 {
   "name": "gulp-connecting-room",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "To write constants that are shared by JavaScript and SCSS in gulpfile.js.",
   "author": "itozyun <itozyun@gmail.com>",
   "license": "Apache-2.0",
