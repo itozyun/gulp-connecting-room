@@ -21,14 +21,14 @@ gulp.task(
     gulp.series(
         function(){
             return gulp.src(['src/js/*.js'])
-                .pipe(connect(COMMON_VARS))
+                .pipe(connect(COMMON_VARS, opt_fileStem, opt_showLog))
                 .pipe(concat('main.js'))
                 .pipe(jsCompiler)
                 .pipe(gulp.dest('output'));
         },
         function(){
             return gulp.src(['src/scss/*.scss'])
-                .pipe(connect(COMMON_VARS))
+                .pipe(connect(COMMON_VARS, opt_fileStem, opt_showLog))
                 .pipe(concat('main.css'))
                 .pipe(scss)
                 .pipe(gulp.dest('output'));
