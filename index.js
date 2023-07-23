@@ -30,6 +30,7 @@ module.exports = function( variables, fileStem, showLog ){
             const value = variables[ variableName ];
 
             scss += '$' + variableName + ' : ' + (
+                typeof value === 'string' && ( 0 <= value.indexOf( '.' ) || !value ) ? '"' + value + '"' :
                 // value && typeof value === 'object' ? JSON.stringify( value ) :
                 value
             ) + ';\n';
